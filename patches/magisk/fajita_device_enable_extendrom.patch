@@ -1,0 +1,11 @@
+--- device.mk
++++ device.mk
+@@ -59,3 +59,8 @@ #$(call inherit-product, vendor/oneplus/fajita/fajita-vendor.mk)
+ 
+ # Include MindTheGapps
+ $(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
++
++# Enable extendrom
++ENABLE_EXTENDROM := true
++EXTENDROM_PACKAGES := "noEOSappstore F-Droid F-DroidPrivilegedExtension additional_repos.xml AuroraStore"
++$(call inherit-product-if-exists, vendor/extendrom/config/common.mk)

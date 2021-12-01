@@ -1,0 +1,8 @@
+--- BoardConfig.mk
++++ BoardConfig.mk
+@@ -36,3 +36,5 @@ -include vendor/oneplus/fajita/BoardConfigVendor.mk
+
+ BOARD_AVB_ALGORITHM := SHA256_RSA2048
+ BOARD_AVB_KEY_PATH := ../keys/lineage/releasekey.key
++
++BOARD_CUSTOM_BOOTIMG_MK := $(DEVICE_PATH)/mkbootimg.mk

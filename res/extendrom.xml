@@ -1,0 +1,3 @@
+<!-- extendrom -->
+<remote name="sfX" fetch="https://github.com/sfX-Android/" />
+<project path="vendor/extendrom" name="android_vendor_extendrom" remote="sfX" revision="main" />

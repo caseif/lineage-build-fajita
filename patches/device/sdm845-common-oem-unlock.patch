@@ -1,0 +1,13 @@
+--- common.mk
++++ common.mk
+@@ -162,6 +162,10 @@ PRODUCT_PACKAGES += \
+     vendor.nxp.nxpese@1.0:64 \
+     vendor.nxp.nxpnfc@1.0:64
+ 
++# OEM Unlock reporting
++PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
++    ro.oem_unlock_supported=1
++
+ # OnePlus
+ PRODUCT_PACKAGES += \
+     oneplus-fwk.oneplus_sdm845

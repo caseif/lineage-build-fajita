@@ -1,0 +1,8 @@
+--- BoardConfig.mk
++++ BoardConfig.mk
+@@ -33,3 +33,5 @@ TARGET_KERNEL_CONFIG := enchilada_defconfig
+ 
+ # inherit from the proprietary version
+ -include vendor/oneplus/fajita/BoardConfigVendor.mk
++BOARD_AVB_ALGORITHM := SHA256_RSA2048
++BOARD_AVB_KEY_PATH := ../keys/lineage/releasekey.key

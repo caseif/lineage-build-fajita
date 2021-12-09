@@ -36,5 +36,4 @@ warranties, bricked devices, and/or zombie apocolypse. Proceed with caution.
 
 ## License
 
-The scripts in this repository are published under the MIT License. The license information for the files under `build`
-and `res` will be added here once I can figure out where I got them from.
+The scripts in this repository are published under the MIT License.

@@ -1,6 +1,6 @@
 --- common.mk
 +++ common.mk
-@@ -162,6 +162,10 @@ PRODUCT_PACKAGES += \
+@@ -344,6 +344,10 @@
      vendor.nxp.nxpese@1.0:64 \
      vendor.nxp.nxpnfc@1.0:64
  
@@ -10,4 +10,4 @@
 +
  # OnePlus
  PRODUCT_PACKAGES += \
-     oneplus-fwk.oneplus_sdm845
+     oneplus-fwk

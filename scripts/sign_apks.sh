@@ -10,4 +10,4 @@ export PATH="${BASE_PATH}/lineage/build/tools:${BASE_PATH}/lineage/out/host/linu
 
 cd "${BASE_PATH}/lineage"
 source "./build/envsetup.sh"
-TMPDIR=/var/tmp python2 "./build/tools/releasetools/sign_target_files_apks" -o -d "${LINEAGE_KEY_DIR}" "${OUT}/obj/PACKAGING/target_files_intermediates/"*-target_files-*.zip "signed-target_files.zip"
+TMPDIR=/var/tmp "./out/soong/host/linux-x86/bin/sign_target_files_apks" -o -d "${LINEAGE_KEY_DIR}" "${OUT}/obj/PACKAGING/target_files_intermediates/"*-target_files-*.zip "signed-target_files.zip"

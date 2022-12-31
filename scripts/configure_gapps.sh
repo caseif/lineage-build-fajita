@@ -18,9 +18,9 @@ if [ ! -e ".git" ]; then
     git init
     git remote add origin "https://gitlab.com/MindTheGapps/vendor_gapps.git"
     git fetch origin
-    git checkout -b "rho" --track "origin/rho"
+    git checkout -b "sigma" --track "origin/sigma"
 else
-    git pull "origin" "rho"
+    git pull "origin" "sigma"
 fi
 
 echo "Applying MTG build script patch...."

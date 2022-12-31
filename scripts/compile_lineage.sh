@@ -20,5 +20,5 @@ breakfast fajita
 echo "Starting compile..."
 export EXTENDROM_PREROOT_BOOT="true"
 export EXTENDROM_PACKAGES="SignMagisk"
-mka target-files-package otatools -j12
+mka target-files-package otatools -j16
 popd

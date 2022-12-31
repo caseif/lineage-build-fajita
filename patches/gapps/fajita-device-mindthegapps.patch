@@ -1,9 +1,8 @@
 --- device.mk
 +++ device.mk
-@@ -56,3 +56,6 @@ $(call inherit-product, device/oneplus/sdm845-common/common.mk)
- 
+@@ -48,2 +48,6 @@
  # Inherit from vendor blobs
- #$(call inherit-product, vendor/oneplus/fajita/fajita-vendor.mk)
+ $(call inherit-product, vendor/oneplus/fajita/fajita-vendor.mk)
 +
 +# Include MindTheGapps
 +$(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)

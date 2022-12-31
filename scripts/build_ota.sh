@@ -17,4 +17,4 @@ export EXTENDROM_PACKAGES="SignMagisk"
 # Increases the build time a little bit, but it's pretty insignificant compared to compilation.
 breakfast fajita
 
-python2 ./build/tools/releasetools/ota_from_target_files -k "${LINEAGE_KEY_PATH}" --block "signed-target_files.zip" "${BASE_PATH}/built/lineage-18.1-$(date +%Y%m%d)-UNOFFICIAL-fajita-signed.zip"
+./out/soong/host/linux-x86/bin/ota_from_target_files -k "${LINEAGE_KEY_PATH}" --block "signed-target_files.zip" "${BASE_PATH}/built/lineage-19.1-$(date +%Y%m%d)-UNOFFICIAL-fajita-signed.zip"

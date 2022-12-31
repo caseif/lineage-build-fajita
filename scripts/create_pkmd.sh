@@ -8,4 +8,4 @@ PKMD_OUTPUT_PATH="${PKMD_OUTPUT_DIR}/pkmd.bin"
 
 mkdir -p  "${PKMD_OUTPUT_DIR}"
 
-python2 "${BASE_PATH}/lineage/external/avb/avbtool" extract_public_key --key "${LINEAGE_KEY_PATH}" --output "${PKMD_OUTPUT_PATH}"
+python "${BASE_PATH}/lineage/external/avb/avbtool" extract_public_key --key "${LINEAGE_KEY_PATH}" --output "${PKMD_OUTPUT_PATH}"

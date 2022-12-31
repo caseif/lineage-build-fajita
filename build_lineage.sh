@@ -25,11 +25,11 @@ fi
 echo "Generating signing keys..."
 eval "sudo -u $(logname) ${SCRIPTS_DIR}/generate_keys.sh ${BASE_PATH}"
 
-echo "Fetching GApps..."
-eval "sudo -u $(logname) ${SCRIPTS_DIR}/configure_gapps.sh ${BASE_PATH}"
-
 echo "Running breakfast..."
 eval "sudo -u $(logname) ${SCRIPTS_DIR}/run_breakfast.sh ${BASE_PATH}"
+
+echo "Fetching GApps..."
+eval "sudo -u $(logname) ${SCRIPTS_DIR}/configure_gapps.sh ${BASE_PATH}"
 
 if [ -z "${NO_EXTRACT_BLOBS}" ] || [ "${NO_EXTRACT_BLOBS}" == "0" ]; then
     echo "Extracting blobs..."

@@ -1,6 +1,6 @@
 --- BoardConfig.mk
 +++ BoardConfig.mk
-@@ -33,3 +33,5 @@ TARGET_KERNEL_CONFIG := enchilada_defconfig
+@@ -30,3 +30,5 @@ TARGET_KERNEL_CONFIG := enchilada_defconfig
  
  # inherit from the proprietary version
  -include vendor/oneplus/fajita/BoardConfigVendor.mk
